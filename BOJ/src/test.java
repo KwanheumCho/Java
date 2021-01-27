@@ -1,16 +1,14 @@
-import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
+import java.util.ArrayList;
 
 public class test {
 	public static void main(String[] args) throws IOException {
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		String s = "abcdefg";
-		String ss = "asdfasfd";
-		bw.write(s);
-		bw.newLine();
-		bw.write(ss);
-		//bw.flush();
-		//bw.close();
+		ArrayList al = new ArrayList();
+		al.add("È£¶ûÀÌ");
+		al.add(3);
+		System.out.println(al.size());
+		System.out.println(al.get(1));
+		System.out.println(al.indexOf("È£¶ûÀÌ"));
+		System.out.println(al.contains("È£¶ûÀÌ"));
 	}
 }
