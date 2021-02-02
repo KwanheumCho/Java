@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-public class Main_¹éÁØ_1244_½ºÀ§Ä¡ÄÑ°í²ô±â_Á¶°üÈì {
+public class Main_ë°±ì¤€_1244_ìŠ¤ìœ„ì¹˜ì¼œê³ ë„ê¸°_ì¡°ê´€í  {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		s_number = sc.nextInt(); // <=100
 		arr = new int[s_number+1];
 		
-		for(int i=1; i<= s_number; i++) { //1ºÎÅÍ ½ÃÀÛ
+		for(int i=1; i<= s_number; i++) { //1ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			arr[i] = sc.nextInt();
 		}
 		
