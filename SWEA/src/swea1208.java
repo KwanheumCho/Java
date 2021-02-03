@@ -33,7 +33,6 @@ public class swea1208 {
 			//
 			for(int d=0; d<dump && max_h-min_h>target ; d++) {
 				
-				
 				height_arr[max_h] -= 1;
 				height_arr[max_h-1] +=1;
 				height_arr[min_h] -= 1;
