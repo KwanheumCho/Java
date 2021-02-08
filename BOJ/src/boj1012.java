@@ -23,16 +23,16 @@ public class boj1012 {
 			_chk = new boolean[row][col];
 			for(int i=0; i<number; i++) {
 				stk = new StringTokenizer(br.readLine());
-				int c = Integer.parseInt(stk.nextToken());
-				int r = Integer.parseInt(stk.nextToken());
-				_map[r][c] = true; //¹èÃß°¡ ÀÖÀ¸¸é true
+				int c = Integer.parseInt(stk.nextToken()); //ê°€ë¡œê¸¸ì´ê°€ c
+				int r = Integer.parseInt(stk.nextToken()); //ì„¸ë¡œê¸¸ì´ê°€ r
+				_map[r][c] = true; //ë°°ì¶”ê°€ ìžˆë‹¤ë©´ true
 			}
 			
 			int cnt = 0;
 			for(int r=0; r<row; r++) {
 				for(int c = 0; c<col; c++) {
-					if(_map[r][c] && !_chk[r][c]) { //¹èÃß°¡ ÀÖ°í, ¹æ¹®ÇÏÁö ¾ÊÀº À§Ä¡
-						_chk[r][c] = true; //¹æ¹® ¸ÕÀú Ã¼Å© ÈÄ DFS½ÃÀÛ
+					if(_map[r][c] && !_chk[r][c]) { 
+						_chk[r][c] = true; 
 						DFS(r, c);
 						cnt++;
 					}
@@ -47,7 +47,7 @@ public class boj1012 {
 		for(int i=0; i<4; i++) {
 			int nr = r + mr[i];
 			int nc = c + mc[i];
-			if(nr>=0 && nr<row && nc>=0 && nc<col) {
+			if(nr>=0 && nr<row && nc>=0 && nc<col) { //ë²”ìœ„ ì²´í¬í•˜ëŠ”ê²Œ ê°„ë‹¨í•´ì„œ êµ³ì´ map ë°”ê¹¥ìª½ì— ë‘˜ë ˆë¥¼ ì•ˆë§Œë“¤ì–´ë„ ì‰¬ìš´ë“¯ ,, ë§Œë“¤ë©´ ì´ì¡°ê±´ ë¹¼ë„ë¨
 				if(_map[nr][nc] && !_chk[nr][nc]) {
 					_chk[nr][nc] = true;
 					DFS(nr, nc);
