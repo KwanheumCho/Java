@@ -58,8 +58,9 @@ public class boj5430 {
 			else {
 				sb.append("error\n");
 			}
-			System.out.print(sb); 
+			System.out.print(sb); 	
 		}//test case
 		// testcase를 다 돌린후에 sb에 전체를 저장해서 출력하니 50퍼에서 오답... why..?
-	}
+	
+    }
 }
