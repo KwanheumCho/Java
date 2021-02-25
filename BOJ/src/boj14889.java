@@ -51,6 +51,7 @@ public class boj14889 {
 			}
 			int tmp = Math.abs(sum1-sum2);
 			answer = Math.min(tmp, answer);
+			
 			return;
 		}
 		

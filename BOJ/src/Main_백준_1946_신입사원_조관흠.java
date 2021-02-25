@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class boj1946 {
+public class Main_백준_1946_신입사원_조관흠 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		//적어도 하나가 떨어지지 않는 자만 선발
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
