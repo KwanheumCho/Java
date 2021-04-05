@@ -24,6 +24,7 @@ public class swea4008 {
 				int num = Integer.parseInt(stk.nextToken());
 				op[i] = num;
 			}
+			
 			arr = new int[N];
 			stk = new StringTokenizer(br.readLine());
 			for(int i=0; i<N; i++) {

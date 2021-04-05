@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class boj9205 {
+public class Main_백준_9205_맥주마시면서걸어가기_조관흠 {
 	private static pos festival;
 	private static pos[] conv;
 	private static pos home;
